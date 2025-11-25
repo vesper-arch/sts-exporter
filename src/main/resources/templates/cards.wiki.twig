@@ -4,6 +4,7 @@
 |-
 !Name
 !Picture
+!Color
 !Rarity
 !Type
 !Energy
@@ -11,6 +12,7 @@
 |-{% for card in cards %}
 |[[{{ card.name }}]]
 |[[File:{{ card.image.file }}|thumb|289x289px]]
+|{{ card.color }}
 |{{ card.rarity }}
 |[[{{ card.type }}]]
 |{{ card.costAndUpgrade }}

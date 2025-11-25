@@ -91,8 +91,8 @@ public class CardExportData implements Comparable<CardExportData> {
                             .replace(" NL ", "\n");
         }
         // image
-        this.image = export.exportPath(this.mod, "card-images", this.name, ".png");
-        this.smallImage = export.exportPath(this.mod, "small-card-images", this.name, ".png");
+        this.image = export.exportPath(this.mod, "card-images", this.color+"-"+this.name, ".png");
+        this.smallImage = export.exportPath(this.mod, "small-card-images", this.color+"-"+this.name, ".png");
     }
 
     public void exportImages() {
