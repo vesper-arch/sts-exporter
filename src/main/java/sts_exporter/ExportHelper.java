@@ -102,9 +102,9 @@ class ExportHelper {
         }
     }
 
-    private static final String[] colorTemplates = {"cards.html","cards.md","cards.wiki","wiki-card-data.txt","style.css"};
+    private static final String[] colorTemplates = {"cards.html","cards.md","cards.lua","cards.wiki","wiki-card-data.txt","style.css"};
     private static final String[] indexTemplates = {"index.html","wiki-card-data.txt"};
-    private static final String[] commonTemplates = {"creatures.html","keywords.html","potions.html","relics.html","cards.html","creatures.md","keywords.md","potions.md","relics.md","cards.md","items.json","style.css"};
+    private static final String[] commonTemplates = {"creatures.html","keywords.html","potions.html","relics.html","cards.html","creatures.md","keywords.md","potions.md","relics.md","cards.md","cards.lua","relics.lua","items.json","style.css"};
     private static final String[] modTemplates = {"index.html","index.md"};
 
     void exportAllTemplates() {

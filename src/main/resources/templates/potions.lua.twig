@@ -1,0 +1,10 @@
+return {
+    {% for potion in potions
+    %}["{{ potion.name }}"] = {
+        Image = "{{ potion.image.relativeTo(dir) }}",
+        Character = "",
+        Rarity = "{{ potion.rarity }}",
+
+    },
+    {% endfor %}
+}

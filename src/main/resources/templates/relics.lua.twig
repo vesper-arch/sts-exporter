@@ -1,0 +1,11 @@
+return {
+    {% for relic in relics
+    %}["{{ relic.name }}"] = {
+        Image = "{{ relic.image.relativeTo(dir) }}",
+        Rarity = "{{ relic.tier }}",
+        Character = "{{ relic.pool }}",
+        Description = "{{ relic.description | replace({'\n':'<br>'}) }}",
+        Flavor = "{{ relic.flavorTextPlain | replace({'\n':'<br>'}) }}"
+    },
+    {% endfor %}
+}

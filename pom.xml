@@ -14,12 +14,13 @@
       <artifactId>slaythespire</artifactId>
       <version>016</version>
       <scope>system</scope>
-      <systemPath>${basedir}/../_ModTheSpire/desktop-1.0.jar</systemPath>
+      <!-- Replace this with wherever this file is on your machine. -->
+      <systemPath>/home/vesper-arch/.local/share/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>org.jtwig</groupId>
       <artifactId>jtwig-core</artifactId>
-      <version>5.85.0.RELEASE</version>
+      <version>5.87.0.RELEASE</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -27,14 +28,16 @@
       <artifactId>BaseMod</artifactId>
       <version>1.6.5</version>
       <scope>system</scope>
-      <systemPath>${basedir}/../_ModTheSpire/mods/BaseMod.jar</systemPath>
+      <!-- Replace this with the path for where BaseMod is on your machine. -->
+      <systemPath>/home/vesper-arch/.local/share/Steam/steamapps/workshop/content/646570/1605833019/BaseMod.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>modthespire</groupId>
       <artifactId>ModTheSpire</artifactId>
       <version>2.4.0</version>
       <scope>system</scope>
-      <systemPath>${basedir}/../_ModTheSpire/ModTheSpire.jar</systemPath>
+      <!-- Replace this with the path for where ModTheSpire is on your machine. -->
+      <systemPath>/home/vesper-arch/.local/share/Steam/steamapps/workshop/content/646570/1605060445/ModTheSpire.jar</systemPath>
     </dependency>
   </dependencies>
 

@@ -1,5 +1,5 @@
-| Image | Name | Rarity | Description |
-| ----- | ---- | ------ | ----------- |
+| Image | Name | Character | Rarity | Description |
+| ----- | ---- | --------- | ------ | ----------- |
 {% for potion in potions
-%}| ![]({{ potion.image.relativeTo(dir) }}) | {{ potion.name }} | {{ potion.rarity }} | {{ potion.descriptionPlain | replace({'\n':' '}) }} |
+%}| ![]({{ potion.image.relativeTo(dir) }}) | {{ potion.name }} | {{ potion.playerClass }} | {{ potion.rarity }} | {{ potion.descriptionPlain | replace({'\n':' '}) }} |
 {% endfor %}

@@ -7,5 +7,4 @@
     Cost = {{ card.card.cost }},{% if card.cost != card.upgrade.cost %}
     CostPlus = {{ card.upgrade.card.cost }},{% endif %}
     Text = "{{ escape(card.textWikiData,'js') }}",
-    Traits = {},
     },{% endfor %}

@@ -1,0 +1,13 @@
+return {
+    {% for card in cards
+    %}["{{ escape(card.name, 'js') }}"] = {
+        Image = "{{ card.image.relativeTo(dir) }}",
+        Color = "{{ card.color }}",
+        Rarity = "{{ card.rarity }}",
+        Type = "{{ card.type }}",
+        Cost = {{ card.card.cost }},{% if card.cost != card.upgrade.cost %}
+        CostPlus = {{ card.upgrade.card.cost }},{% endif %}
+        Description = "{{ escape(card.textWikiData,'js') }}",
+    },
+    {% endfor %}
+}
